@@ -1,0 +1,89 @@
+@import './_variables';
+
+// Core Layout Styles
+.layout-wrapper {
+    min-height: 100vh;
+    background-color: $layoutBgColor;
+}
+
+.layout-sidebar {
+    position: fixed;
+    width: $sidebarWidth;
+    height: calc(100vh - #{$topbarHeight});
+    top: $topbarHeight;
+    left: 0;
+    background-color: $sidebarBg;
+    border-right: $sidebarBorder;
+    padding: $sidebarPadding;
+    transition: transform $transitionDuration;
+    z-index: 999;
+}
+
+.layout-main {
+    margin-left: $sidebarWidth;
+    padding: $contentPadding;
+    transition: margin-left $transitionDuration;
+}
+
+.layout-topbar {
+    position: fixed;
+    height: $topbarHeight;
+    width: 100%;
+    background-color: $topbarBg;
+    border-bottom: $topbarBottomBorder;
+    padding: 0 $layoutPadding;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+
+    .topbar-start {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .topbar-end {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+// Responsive Layout
+@media screen and (max-width: 991px) {
+    .layout-sidebar {
+        transform: translateX(-100%);
+
+        &.active {
+            transform: translateX(0);
+        }
+    }
+
+    .layout-main {
+        margin-left: 0;
+        padding-top: calc(#{$topbarHeight} + #{$contentPadding});
+    }
+}
+
+// Component Styles
+.card {
+    background: #ffffff;
+    border: 1px solid #DFE1E6;
+    border-radius: $borderRadius;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 1px rgba(9, 30, 66, 0.25);
+}
+
+// Utility Classes
+.text-primary {
+    color: $menuitemBadgeBg;
+}
+
+.bg-primary {
+    background-color: $menuitemBadgeBg;
+}
+
+.border-primary {
+    border-color: $menuitemBadgeBg;
+}

@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-jira-bg text-jira-gray-dark;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-sm font-medium transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-jira-blue text-white hover:bg-jira-blue-dark;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-jira-gray hover:bg-gray-100;
+  }
+
+  .nav-link {
+    @apply px-3 py-2 text-jira-gray hover:bg-gray-100 rounded-sm transition-colors duration-200;
+  }
+
+  .nav-link.active {
+    @apply bg-blue-50 text-jira-blue;
+  }
+
+  .input {
+    @apply w-full px-3 py-2 border border-jira-border rounded-sm focus:outline-none focus:border-jira-blue focus:ring-1 focus:ring-jira-blue;
+  }
+
+  .card {
+    @apply bg-white rounded-sm border border-jira-border shadow-sm;
+  }
+
+  .avatar {
+    @apply w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium text-white;
+  }
+
+  .badge {
+    @apply px-2 py-1 rounded-sm text-xs font-medium;
+  }
+
+  .badge-todo {
+    @apply bg-gray-100 text-jira-gray;
+  }
+
+  .badge-in-progress {
+    @apply bg-blue-100 text-jira-blue;
+  }
+
+  .badge-done {
+    @apply bg-green-100 text-green-700;
+  }
+}

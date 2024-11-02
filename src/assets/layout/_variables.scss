@@ -1,0 +1,42 @@
+// General
+$scale: 14px;                    // initial font size
+$borderRadius: 3px;             // border radius of layout element e.g. card, sidebar
+$transitionDuration: .2s;        // transition duration of layout elements e.g. sidebar, overlay menus
+
+// Main Layout
+$layoutPadding: 2rem;           // padding of main layout
+$layoutBgColor: #FAFBFC;        // background color of main layout
+
+// Menu Common
+$menuitemBadgeBg: #0052CC;
+$menuitemBadgeColor: #ffffff;
+$submenuBg: #ffffff;
+$menuitemTextColor: #42526E;
+$menuitemIconColor: #42526E;
+$menuitemHoverBg: #F4F5F7;
+$menuitemTextHoverColor: #172B4D;
+$menuitemIconHoverColor: #172B4D;
+$menuitemActiveTextColor: #0052CC;
+$menuitemActiveIconColor: #0052CC;
+$menuitemActiveBg: #DEEBFF;
+
+// Topbar
+$topbarBg: #ffffff;
+$topbarBottomBorder: 1px solid #DFE1E6;
+$topbarHeight: 3.5rem;
+$topbarButtonBg: transparent;
+$topbarButtonColor: #42526E;
+$topbarButtonHoverBg: #F4F5F7;
+$topbarButtonHoverColor: #172B4D;
+$topbarButtonActiveBg: #DEEBFF;
+$topbarButtonActiveColor: #0052CC;
+
+// Sidebar
+$sidebarWidth: 240px;            // width of the sidebar
+$sidebarBg: #ffffff;             // background color of the sidebar
+$sidebarBorder: 1px solid #DFE1E6;  // border of the sidebar
+$sidebarPadding: 1rem;          // padding of the sidebar
+
+// Content
+$contentPadding: 2rem;          // padding of the main content
+$contentBg: #FAFBFC;            // background color of the main content
